@@ -5,6 +5,13 @@
     <title>Anant Gandhi - Resume</title>
   </head>
   <body style="margin: 0; height: 100vh;">
+    <script>
+      // Redirect mobile users to directly download/view the PDF
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        window.location.href = 'resume.pdf';
+      }
+    </script>
+
     <embed src="resume.pdf" type="application/pdf" width="100%" height="100%">
   </body>
 </html>
